@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6dd4f8b5-360b-4c18-b84e-6502c3f30864" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/angularclient/.angular-cli.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angularclient/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angularclient/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/angularclient/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angularclient/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/angularclient/src/app/app.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angularclient/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angularclient/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angularclient/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angularclient/src/app/app.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angularclient/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angularclient/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angularclient/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/angularclient/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angularclient/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angularclient/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angularclient/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angularclient/src/polyfills.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angularclient/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/angularclient/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angularclient/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angularclient/src/test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angularclient/src/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/angularclient/src/tsconfig.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angularclient/src/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/angularclient/src/tsconfig.spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angularclient/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/angularclient/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angularclient/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/angularclient/tslint.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/angularclient" />
+  </component>
+  <component name="ProjectId" id="1y4qSG6h8wTdVodX0Ugs2TBuA1g" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.buildTools.grunt.grunt-cli.package" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/angularclient/src/app/entities" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="C:\Users\robby\OneDrive\Bureaublad\Portfolio\CarShop-frontEnd\angularclient\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\robby\OneDrive\Bureaublad\Portfolio\CarShop-frontEnd\angularclient\src\app\components\charts" />
+      <recent name="C:\Users\robby\OneDrive\Bureaublad\Portfolio\CarShop-frontEnd\angularclient\src\app\components\lists" />
+      <recent name="C:\Users\robby\OneDrive\Bureaublad\Portfolio\CarShop-frontEnd\angularclient\src\app\services\brandstofservice" />
+      <recent name="C:\Users\robby\OneDrive\Bureaublad\Portfolio\CarShop-frontEnd\angularclient\src\app\services\categoryservice" />
+      <recent name="C:\Users\robby\OneDrive\Bureaublad\Portfolio\CarShop-frontEnd\angularclient\src\app\entities" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\robby\OneDrive\Bureaublad\Portfolio\CarShop-frontEnd\angularclient\src\app\entities" />
+      <recent name="C:\Users\robby\OneDrive\Bureaublad\Portfolio\CarShop-frontEnd\angularclient" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/CarShop-frontEnd/angularclient/src/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.grunt">
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6dd4f8b5-360b-4c18-b84e-6502c3f30864" name="Default Changelist" comment="" />
+      <created>1631521205575</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1631521205575</updated>
+      <workItem from="1631521208330" duration="590000" />
+      <workItem from="1631521810816" duration="3519000" />
+      <workItem from="1631531989792" duration="42485000" />
+      <workItem from="1632169010906" duration="2361000" />
+      <workItem from="1632172103325" duration="3448000" />
+      <workItem from="1632216296927" duration="2829000" />
+      <workItem from="1632246497949" duration="69161000" />
+      <workItem from="1632821730087" duration="41000" />
+      <workItem from="1632852710055" duration="4099000" />
+      <workItem from="1632905612238" duration="4134000" />
+      <workItem from="1632910768075" duration="44782000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/../../Manning/Angular In Action/datacenter/node_modules/karma/config.tpl.js" />
+        <option value="$PROJECT_DIR$/angularclient/node_modules/karma/config.tpl.js" />
+      </list>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="70" key="#TSLint" timestamp="1632168746174">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="70" key="#TSLint/0.0.1536.824@0.0.1536.824" timestamp="1632168746174" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1631521944035">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1631521944035" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1633207034138">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1633207034138" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1632821769649">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1632821769649" />
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1633456313586">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1633456313586" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1633456313579">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1633456313578" />
+    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1633456313565">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1633456313565" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1633456313579">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1633456313579" />
+    <state x="277" y="54" key="SettingsEditor" timestamp="1631521771427">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1631521771427" />
+    <state x="632" y="339" width="348" height="298" key="org.angular.cli.generate" timestamp="1631523179774">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="632" y="339" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1631523179774" />
+    <state x="492" y="42" key="refactoring.ChangeSignatureDialog" timestamp="1632423375887">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="492" y="42" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1632423375887" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1633263743861">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1633263743861" />
+  </component>
+</project>

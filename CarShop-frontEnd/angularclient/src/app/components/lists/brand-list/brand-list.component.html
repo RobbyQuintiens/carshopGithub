@@ -1,0 +1,99 @@
+<div class="row mb-3">
+  <div class="col-md-12">
+    <ul class="list-inline">
+      <li class="list-inline-item align-middle">
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </li>
+      <li class="list-inline-item align-middle">
+        <a routerLink="/users" class="btn btn-secondary text-light"><i class="bi bi-search"></i></a>
+      </li>
+      <li class="list-inline-item align-middle">
+        <a (click)="openModalAddBrand(modalForm)" class="btn btn-success text-light"><i class="bi bi-plus-lg"></i></a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<ng-template #modalForm let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">Add brand</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">×</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form [formGroup]="formValue">
+      <div class="form-group">
+        <label for="brand">Merk</label>
+        <input type="text" formControlName="name" class="form-control" id="brand" placeholder="Merk">
+      </div>
+      <div class="form-group">
+        <label for="country">Land</label>
+        <input type="text" formControlName="country" class="form-control" id="country" placeholder="Land">
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-success" (click)="addBrand()" >Add</button>
+    <button type="button" class="btn btn-secondary" (click)="modal.close('Save click')">Close</button>
+  </div>
+</ng-template>
+
+
+<div class="card my-0">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+      <tr>
+        <th scope="col" class="col-md-1">ID</th>
+        <th scope="col" class="col-md-4">Merk</th>
+        <th scope="col" class="col-md-4">Land</th>
+        <th scope="col" class="col-md-1 fixed"></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let brand of brands">
+        <td>{{ brand.id }}</td>
+        <td>{{ brand.name}}</td>
+        <td>{{ brand.country }}</td>
+        <td>
+          <ul class="text-center list-inline">
+            <li class="list-inline-item">
+              <a [routerLink]="['./edit/'+brand.id]">
+                <button class="btn btn-success text-light btn-sm"><span class="bi bi-pencil"></span></button>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <button class="btn btn-danger text-light btn-sm" (click)="deleteBrandModal(modalData)"><span class="bi bi-x-lg"></span></button>
+            </li>
+          </ul>
+        </td>
+        <ng-template #modalData let-modal>
+          <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title">Delete brand</h4>
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Are you sure you want to delete <span class="text-primary">{{brand.name}}</span></strong></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" (click)="delete(brand)" >Delete</button>
+            <button type="button" class="btn btn-secondary" (click)="modal.close('Save click')">Close</button>
+          </div>
+        </ng-template>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+
+
+
+

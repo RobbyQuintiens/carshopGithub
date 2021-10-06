@@ -1,0 +1,158 @@
+<div class="row mb-3">
+  <div class="col-md-12">
+    <ul class="list-inline">
+      <li class="list-inline-item align-middle">
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </li>
+      <li class="list-inline-item align-middle">
+        <a routerLink="/users" class="btn btn-secondary text-light"><i class="bi bi-search"></i></a>
+      </li>
+      <li class="list-inline-item align-middle">
+        <a (click)="openModalAddModel(modalForm)" class="btn btn-success text-light"><i class="bi bi-plus-lg"></i></a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<ng-template #modalForm let-modal class="modal-form-2">
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-addModel-title">Voeg Model Toe</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">×</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form [formGroup]="formValue">
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label for="model">Model</label>
+            <input type="text" formControlName="name" class="form-control" id="model" placeholder="Model">
+          </div>
+          <div class="form-group">
+            <label for="generatie">Generatie</label>
+            <input type="text" formControlName="generatie" class="form-control" id="generatie" placeholder="Generatie">
+          </div>
+          <div class="form-group">
+            <label for="category">Categorie</label><br>
+            <select id="category" [ngModel]="category" formControlName="category" class="form-control">
+              <option value="" disabled selected>Kies categorie..</option>
+              <option *ngFor="let category of categories" [value]="category.id">{{category.name}}</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="merk">Merk</label><br>
+            <select id="merk" [ngModel]="category" formControlName="brand" class="form-control">
+              <option value="" disabled selected>Kies merk..</option>
+              <option *ngFor="let brand of brands" [value]="brand.id">{{brand.name}}</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="brandstof">Brandstof</label><br>
+            <select id="brandstof" [ngModel]="brandstof" formControlName="fuel" class="form-control">
+              <option value="" disabled selected>Kies brandstof..</option>
+              <option *ngFor="let brandstof of brandstoffen"
+                      [value]="brandstof.id">{{brandstof.brandstofType}}</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="brandstofscore">Brandstofscore</label>
+            <input type="text" formControlName="brandstofscore" class="form-control" id="brandstofscore" placeholder="Branstofscore">
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label for="pk">PK</label>
+            <input type="text" formControlName="hp" class="form-control" id="pk" placeholder="PK">
+          </div>
+          <div class="form-group">
+            <label for="aandrijving">Aandrijving</label><br>
+            <select id="aandrijving" [ngModel]="transmissie" formControlName="aandrijving" class="form-control">
+              <option value="" disabled selected>Kies aandrijving..</option>
+              <option *ngFor="let aandrijving of aandrijvingen"
+                      [value]="aandrijving.label">{{aandrijving.label}}</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="co2">Co2</label>
+            <input type="text" formControlName="co2" class="form-control" id="co2" placeholder="CO2">
+          </div>
+          <div class="form-group">
+            <label for="emissie">Emissie</label>
+            <input type="text" formControlName="emissie" class="form-control" id="emissie" placeholder="Emissie">
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-success" (click)="addModel()">Add</button>
+    <button type="button" class="btn btn-secondary" (click)="modal.close('Save click')">Close</button>
+  </div>
+</ng-template>
+
+<div class="card my-0">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+      <tr>
+        <th scope="col" class="col-md-0">ID</th>
+        <th scope="col" class="col-md-1">Model</th>
+        <th scope="col" class="col-md-1">Generatie</th>
+        <th scope="col" class="col-md-2 d-none d-lg-table-cell">Categorie</th>
+        <th scope="col" class="col-md-0">Merk</th>
+        <th scope="col" class="col-md-1">Brandstof</th>
+        <th scope="col" class="col-md-0 d-none d-lg-table-cell">B. score</th>
+        <th scope="col" class="col-md-0 d-none d-lg-table-cell">PK</th>
+        <th scope="col" class="col-md-1 d-none d-lg-table-cell">Aandrijving</th>
+        <th scope="col" class="col-md-0 d-none d-lg-table-cell">Co2</th>
+        <th scope="col" class="col-md-0 d-none d-lg-table-cell">Emissie</th>
+        <th scope="col" class="col-md-1 fixed"></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let model of models">
+        <td>{{ model.id }}</td>
+        <td>{{ model.name }}</td>
+        <td>{{ model.generatie }}</td>
+        <td class="d-none d-lg-table-cell">{{ model.category }}</td>
+        <td>{{ model.brand }}</td>
+        <td>{{ model.brandstof }}</td>
+        <td class="d-none d-lg-table-cell">{{ model.brandstofScore }}</td>
+        <td class="d-none d-lg-table-cell">{{ model.aantalPk }}</td>
+        <td class="d-none d-lg-table-cell">{{ model.aandrijving | titlecase }}</td>
+        <td class="d-none d-lg-table-cell">{{ model.co2Emissie }}</td>
+        <td class="d-none d-lg-table-cell">{{ model.emissieKlasse }}</td>
+        <td>
+          <ul class="text-center list-inline">
+            <li class="list-inline-item">
+              <button class="btn btn-success text-light btn-sm"><span class="bi bi-pencil"></span></button>
+            </li>
+            <li class="list-inline-item">
+              <button class="btn btn-danger text-light btn-sm" (click)="deleteModelModal(modalData)"><span
+                class="bi bi-x-lg"></span></button>
+            </li>
+          </ul>
+        </td>
+        <ng-template #modalData let-modal>
+          <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title">Verwijder Model</h4>
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Are you sure you want to delete <span class="text-primary">{{model.name}}</span></strong></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" (click)="delete(model)">Delete</button>
+            <button type="button" class="btn btn-secondary" (click)="modal.close('Save click')">Close</button>
+          </div>
+        </ng-template>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

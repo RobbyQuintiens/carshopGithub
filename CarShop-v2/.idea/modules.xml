@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CarShop.iml" filepath="$PROJECT_DIR$/CarShop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CarshopWebParent/CarshopBackEnd/carshopbackend.iml" filepath="$PROJECT_DIR$/CarshopWebParent/CarshopBackEnd/carshopbackend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CarshopCommon/carshopcommon.iml" filepath="$PROJECT_DIR$/CarshopCommon/carshopcommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CarshopWebParent/CarshopFrontEnd/carshopfrontend.iml" filepath="$PROJECT_DIR$/CarshopWebParent/CarshopFrontEnd/carshopfrontend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CarshopWebParent/carshopwebparent.iml" filepath="$PROJECT_DIR$/CarshopWebParent/carshopwebparent.iml" />
+    </modules>
+  </component>
+</project>

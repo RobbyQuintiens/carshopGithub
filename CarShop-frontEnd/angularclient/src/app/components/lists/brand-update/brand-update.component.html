@@ -1,0 +1,39 @@
+<div class="d-flex justify-content-center">
+  <div class="card" style="width: 25rem;">
+    <div class="card-header">
+      <h4 class="card-title">Edit brand</h4>
+    </div>
+    <div class="card-body">
+      <form [formGroup]="updateForm">
+        <div class="form-group">
+          <label for="brand">Merk</label>
+          <input type="text" formControlName="name" value="{{name}}" class="form-control" id="brand" placeholder="Merk">
+
+          <label for="country">Land</label>
+          <input type="text" formControlName="country" value="{{country}}" class="form-control" id="country" placeholder="Land">
+        </div>
+      </form>
+    </div>
+    <div class="card-footer">
+      <button type="button" class="btn btn-success" (click)="updateBrandModal(modalData)" >Update</button>
+      <a [routerLink]="['/brands']"><button type="button" class="btn btn-secondary float-right"  >Cancel</button></a>
+    </div>
+
+  </div>
+</div>
+
+<ng-template #modalData let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">Update brand</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">×</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p><strong>Are you sure you want to update <span class="text-primary">{{name}}</span></strong></p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-success" (click)="updateBrand()" >OK</button>
+    <button type="button" class="btn btn-secondary" (click)="modal.close('Save click')">Close</button>
+  </div>
+</ng-template>

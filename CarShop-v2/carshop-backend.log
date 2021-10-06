@@ -1,0 +1,37 @@
+2021-08-15 20:19:50.853  INFO 13004 --- [restartedMain] c.c.admin.CarshopBackEndApplication      : Starting CarshopBackEndApplication using Java 14.0.2 on LAPTOP-MSAEB1M2 with PID 13004 (C:\Users\robby\OneDrive\Bureaublad\Portfolio\CarShop\CarshopWebParent\CarshopBackEnd\target\classes started by robby in C:\Users\robby\OneDrive\Bureaublad\Portfolio\CarShop)
+2021-08-15 20:19:50.858  INFO 13004 --- [restartedMain] c.c.admin.CarshopBackEndApplication      : No active profile set, falling back to default profiles: default
+2021-08-15 20:19:50.962  INFO 13004 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-15 20:19:50.964  INFO 13004 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-15 20:19:53.020  INFO 13004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-15 20:19:53.194  INFO 13004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 154 ms. Found 2 JPA repository interfaces.
+2021-08-15 20:19:54.637  INFO 13004 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-08-15 20:19:54.656  INFO 13004 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-15 20:19:54.657  INFO 13004 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-15 20:19:54.914  INFO 13004 --- [restartedMain] o.a.c.c.C.[.[localhost].[/CarshopAdmin]  : Initializing Spring embedded WebApplicationContext
+2021-08-15 20:19:54.915  INFO 13004 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3949 ms
+2021-08-15 20:19:54.983  INFO 13004 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-15 20:19:55.881  INFO 13004 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-15 20:19:55.889  INFO 13004 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/carshopdb'
+2021-08-15 20:19:56.207  INFO 13004 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-15 20:19:56.321  INFO 13004 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-15 20:19:56.618  INFO 13004 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-15 20:19:56.890  INFO 13004 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-08-15 20:19:58.651  INFO 13004 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-15 20:19:58.671  INFO 13004 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-15 20:19:59.599  WARN 13004 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-15 20:19:59.974  INFO 13004 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/images/**'] with []
+2021-08-15 20:19:59.975  INFO 13004 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
+2021-08-15 20:19:59.976  INFO 13004 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-08-15 20:19:59.977  INFO 13004 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**'] with []
+2021-08-15 20:19:59.977  INFO 13004 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/fontawesome/**'] with []
+2021-08-15 20:19:59.977  INFO 13004 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webfonts/**'] with []
+2021-08-15 20:20:00.059  INFO 13004 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7e46a906, org.springframework.security.web.context.SecurityContextPersistenceFilter@6f16dacf, org.springframework.security.web.header.HeaderWriterFilter@42178bfe, org.springframework.security.web.csrf.CsrfFilter@752846fe, org.springframework.security.web.authentication.logout.LogoutFilter@4e8dfa54, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4b8dbffe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@734827f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@888cafc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@58928b7f, org.springframework.security.web.session.SessionManagementFilter@40e95303, org.springframework.security.web.access.ExceptionTranslationFilter@3bce227, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@72bf467f]
+2021-08-15 20:20:00.492  INFO 13004 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-08-15 20:20:01.404  INFO 13004 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-08-15 20:20:01.475  INFO 13004 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/CarshopAdmin'
+2021-08-15 20:20:01.497  INFO 13004 --- [restartedMain] c.c.admin.CarshopBackEndApplication      : Started CarshopBackEndApplication in 11.642 seconds (JVM running for 13.448)
+2021-08-15 20:20:02.390  INFO 13004 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[localhost].[/CarshopAdmin]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-15 20:20:02.391  INFO 13004 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-15 20:20:02.393  INFO 13004 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-08-15 20:20:24.692  INFO 13004 --- [http-nio-8081-exec-10] com.carshop.admin.service.UserService    : User Mieke Briers status changed to: false
+2021-08-15 20:22:39.209  INFO 13004 --- [http-nio-8081-exec-1] com.carshop.admin.service.UserService    : User Mieke Briers status changed to: true

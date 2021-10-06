@@ -1,0 +1,71 @@
+<div class="container">
+
+  <div class="row m-5">
+    <div class="col-lg-3 col-sm-6">
+      <div class="card">
+        <div class="card-header text-center bi-list">
+          <h3>Merken</h3>
+        </div>
+        <div class="card-body">
+          <p [routerLink]="['/brands']">Merken lijst</p>
+          <p>Merk toevoegen</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+      <div class="card">
+        <div class="card-header text-center bi-list">
+          <h3>Modellen</h3>
+        </div>
+        <div class="card-body">
+          <p [routerLink]="['/models']">Modellen lijst</p>
+          <p>Model toevoegen</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+      <div class="card ">
+        <div class="card-header text-center bi-list">
+          <h3>Producten</h3>
+        </div>
+        <div class="card-body">
+          <p [routerLink]="['/products']">Producten lijst</p>
+          <p>Product toevoegen</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+      <div class="card ">
+        <div class="card-header text-center bi-gear">
+          <h3>Instellingen</h3>
+        </div>
+        <div class="card-body">
+          <p>Settings</p>
+          <p>Uitloggen</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row m-5">
+    <div class="col-lg-6 col-sm-6">
+      <div class="card">
+        <div class="card-header text-center bi-graph-up">
+          <h3>Website Trafiek</h3>
+        </div>
+        <div class="card-body">
+          <app-sales></app-sales>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-sm-6">
+      <div class="card">
+        <div class="card-header text-center bi-graph-up">
+          <h3>Gereserveerd</h3>
+        </div>
+        <div class="card-body">
+          <app-sales></app-sales>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

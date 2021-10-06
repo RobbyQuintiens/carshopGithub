@@ -1,0 +1,177 @@
+<div class="row mb-3">
+  <div class="col-md-12">
+    <ul class="list-inline">
+      <li class="list-inline-item align-middle">
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </li>
+      <li class="list-inline-item align-middle">
+        <a routerLink="/users" class="btn btn-secondary text-light"><i class="bi bi-search"></i></a>
+      </li>
+      <li class="list-inline-item align-middle">
+        <a (click)="openProductAddModel(modalForm)" class="btn btn-success text-light"><i class="bi bi-plus-lg"></i></a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<ng-template #modalForm let-modal class="modal-form-2">
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-addModel-title">Voeg Product Toe</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">×</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form [formGroup]="formValue">
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label for="brand">Merk</label><br>
+            <select id="brand" [ngModel]="brand" formControlName="brand" class="form-control" (change)='changeBrand($event)'>>
+              <option value="" disabled selected>Kies merk..</option>
+              <option *ngFor="let brand of brands" [value]="brand.id">{{brand.name}}</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="merk">Model</label><br>
+            <select id="merk" [ngModel]="model" formControlName="model" class="form-control">
+              <option value="" disabled selected>Kies model..</option>
+              <option *ngFor="let model of models" [value]="model.id">{{model.code}}</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="year">Bouwjaar</label>
+            <input type="number" [minLength]="4" [maxLength]="4" formControlName="year" class="form-control" id="year" placeholder="Bouwjaar">
+          </div>
+          <div class="form-group">
+            <label for="condition">Conditie</label><br>
+            <select id="condition" [ngModel]="conditie" formControlName="conditie" class="form-control">
+              <option value="" disabled selected>Kies conditie..</option>
+              <option *ngFor="let conditie of condities" [value]="conditie.label">{{conditie.label}}</option>
+            </select>
+          </div>
+          <div class="form-group">
+
+            // TODO if conditie is nieuw --> km is 0
+
+            <label for="km">Aantal km</label>
+            <input type="number" formControlName="km" class="form-control" id="km" placeholder="Aantal KM">
+          </div>
+          <div class="form-group">
+            <label for="color">Kleur</label>
+            <input type="text" formControlName="color" class="form-control" id="color" placeholder="Kleur">
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label for="doors">Deuren</label>
+            <input type="number" formControlName="doors" class="form-control" id="doors" placeholder="Aantal deuren">
+          </div>
+          <div class="form-group">
+            <label for="transmission">Transmissie</label><br>
+            <select id="transmission" [ngModel]="transmissie" formControlName="transmission" class="form-control">
+              <option value="" disabled selected>Kies transmissie..</option>
+              <option *ngFor="let transmissie of transmissies" [value]="transmissie.label">{{transmissie.label}}</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="hp">PK</label>
+            <input type="number" formControlName="hp" class="form-control" id="hp" placeholder="PK">
+          </div>
+          <div class="form-group">
+            <label for="price">Prijs</label>
+            <input type="number" formControlName="price" class="form-control" id="price" placeholder="Prijs">
+          </div>
+          <div class="form-group">
+            <label for="file">Afbeelding</label>
+            <input
+              formControlName="file"
+              id="file"
+              type="file"
+              class="form-control"
+              (change)="onFileChange($event)">
+          </div>
+        </div>
+
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-success" (click)="addProduct()">Add</button>
+    <button type="button" class="btn btn-secondary" (click)="modal.close('Save click')">Close</button>
+  </div>
+</ng-template>
+
+
+<div class="card my-0">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+      <tr>
+        <th scope="col" class="col-md-0">ID</th>
+        <th scope="col" class="col-md-1">Merk</th>
+        <th scope="col" class="col-md-0">Model</th>
+        <th scope="col" class="col-md-0">Jaar</th>
+        <th scope="col" class="col-md-0 d-none d-lg-table-cell">KM</th>
+        <th scope="col" class="col-md-0">Kleur</th>
+        <th scope="col" class="col-md-0">Deuren</th>
+        <th scope="col" class="col-md-1 d-none d-lg-table-cell">Transmissie</th>
+        <th scope="col" class="col-md-1 d-none d-lg-table-cell">Brandstof</th>
+        <th scope="col" class="col-md-0 d-none d-lg-table-cell">PK</th>
+        <th scope="col" class="col-md-0">Prijs</th>
+        <th scope="col" class="col-md-1 d-none d-lg-table-cell">Categorie</th>
+        <th scope="col" class="col-md-0 d-none d-lg-table-cell">Conditie</th>
+        <th scope="col" class="col-md-0">Status</th>
+        <th scope="col" class="col-md-1 fixed"></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let product of products">
+        <td>{{ product.id }}</td>
+        <td>{{ product.model.brand }}</td>
+        <td>{{ product.model.name }}</td>
+        <td>{{ product.bouwjaar }}</td>
+        <td class="d-none d-lg-table-cell">{{ product.aantalKm }}</td>
+        <td>{{ product.koetswerkkleur }}</td>
+        <td>{{ product.aantalDeuren }}</td>
+        <td class="d-none d-lg-table-cell">{{ product.transmissie }}</td>
+        <td class="d-none d-lg-table-cell">{{ product.model.brandstof }}</td>
+        <td class="d-none d-lg-table-cell">{{ product.model.aantalPk }}</td>
+        <td>{{ product.prijs }}</td>
+        <td class="d-none d-lg-table-cell">{{ product.model.category }}</td>
+        <td class="d-none d-lg-table-cell">{{ product.conditie.substr(0, 1) }}</td>
+        <td>{{ product.productStatus.substr(0, 1) }}</td>
+        <td>
+          <ul class="text-center list-inline">
+            <li class="list-inline-item">
+              <button class="btn btn-success text-light btn-sm"><span class="bi bi-pencil"></span></button>
+            </li>
+            <li class="list-inline-item">
+              <button class="btn btn-danger text-light btn-sm" (click)="deleteProductModal(modalData)"><span
+                class="bi bi-x-lg"></span></button>
+            </li>
+          </ul>
+        </td>
+        <ng-template #modalData let-modal>
+          <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title">Verwijder Product</h4>
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Are you sure you want to delete <span class="text-primary">{{product.model.name}}</span></strong></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" (click)="delete(product)">Delete</button>
+            <button type="button" class="btn btn-secondary" (click)="modal.close('Save click')">Close</button>
+          </div>
+        </ng-template>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

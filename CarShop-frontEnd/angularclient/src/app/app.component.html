@@ -1,0 +1,75 @@
+<!--<div>-->
+<!--  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">-->
+<!--    <a class="navbar-brand" href="#">CarShop</a>-->
+<!--    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--      <span class="navbar-toggler-icon"></span>-->
+<!--    </button>-->
+
+<!--    <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+<!--      <ul class="navbar-nav mr-auto">-->
+<!--        <li class="nav-item active">-->
+<!--          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" [routerLink]="['/brands']">Brands</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" [routerLink]="['/models']">Models</a>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--      <form class="form-inline my-2 my-lg-0">-->
+<!--        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+<!--        <button class="btn btn-outline-success my-2 my-sm-0 bg-light" type="submit">Search</button>-->
+<!--      </form>-->
+<!--    </div>-->
+<!--  </nav>-->
+
+<!-- Vertical navbar -->
+<div class="vertical-nav bg-white" id="sidebar">
+  <div class="py-3 px-3 mb-4 bg-light">
+    <div class="media d-flex align-items-center">
+      <div class="media-body">
+        <h4 class="m-0">CarShop</h4>
+      </div>
+    </div>
+  </div>
+
+  <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Main</p>
+
+  <ul class="nav flex-column bg-white mb-0">
+    <li class="nav-item">
+      <a href="#" class="nav-link text-dark font-italic bg-light">
+        <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+        Home
+      </a>
+    </li>
+    <li class="nav-item">
+      <a [routerLink]="['/brands']" class="nav-link text-dark font-italic bg-light">
+        <i class="fa fa-address-card mr-3 text-primary fa-fw"></i>
+        Brands
+      </a>
+    </li>
+    <li class="nav-item">
+      <a [routerLink]="['/models']" class="nav-link text-dark font-italic bg-light">
+        <i class="fa fa-cubes mr-3 text-primary fa-fw"></i>
+        Models
+      </a>
+    </li>
+    <li class="nav-item">
+      <a [routerLink]="['/products']" class="nav-link text-dark font-italic bg-light">
+        <i class="fa fa-cubes mr-3 text-primary fa-fw"></i>
+        Products
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-dark font-italic bg-light">
+        <i class="fa fa-cubes mr-3 text-primary fa-fw"></i>
+        Notifications
+      </a>
+    </li>
+  </ul>
+</div>
+<main class="mdl-layout__content page-content" style="padding: 20px;">
+  <router-outlet></router-outlet>
+</main>
+<!--</div>-->

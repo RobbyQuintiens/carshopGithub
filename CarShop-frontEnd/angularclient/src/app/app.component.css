@@ -1,0 +1,21 @@
+.vertical-nav {
+  min-width: 8rem;
+  width: 11rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+}
+
+.page-content {
+  margin-left: 11rem;
+  transition: all 0.4s;
+}
+
+.search-nav input{
+  width: 100%;
+  margin: -1.2rem;
+}
+
